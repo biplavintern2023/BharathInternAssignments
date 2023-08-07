@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius to Fahrenheit Converter</title>
+    <script type="text/javascript">
+        //javascript function//
+        function convert() {
+            var c = document.getElementById('data').value;
+            var f = (c * 1.8) + 32; //formula for conversion
+            document.getElementById('res').innerText = `${c} C = ${f} F`;
+        }
+    </script>
+    <style type="text/css">
+        * {
+            background: rgb(175, 231, 231);
+            text-align: center;
+            margin: 7px;
+            padding: 7px;
+        }
+        
+        h3 {
+            font-weight: 600;
+        }
+        
+        button {
+            margin-right: 20px;
+            align-items: center;
+            font-weight: 500;
+        }
+        
+        input {
+            margin-left: 80px;
+        }
+        
+        span {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <h2> Celsius to Fahrenheit Converter</h2>
+        <h3>-Now you can convert any degree celsius to fahrenheit. <br>
+            <h4>NOTE: enter only digits</h4>
+        </h3>
+    </nav>
+    <input type="" name="" id="data" /><span>Celsius</span>
+    <br/>
+    <button onclick="convert()">Convert to Fahrenheit</button>
+    <h1 id="res"></h1>
+</body>
+
+</html>
